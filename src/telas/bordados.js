@@ -19,11 +19,11 @@ export default function Bordados(){
         <Image source={tela4} style={estilos.imagemCliente} />
         <Text style ={estilos.nomeCliente}>Cleiber Castro</Text> 
         </View>
-        <Texto style ={estilos.descricao}>
+        <Text style ={estilos.descricao}>
         A logo foi feita para 
         a empresa Águia Bordados 
         no ano de 2018
-        </Texto> 
+        </Text> 
         <Text style = {estilos.preco}>R$ 40,00</Text>
     </View>
     </>

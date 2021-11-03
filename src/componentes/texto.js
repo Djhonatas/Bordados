@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { Text} from 'react-native';
 
 export default function Texto({ children }){
@@ -9,4 +9,4 @@ const estilos = StyleSheet.create({
     Texto: {
         FontFamily: "MontserratRegular",
     }
-})
+})*/
