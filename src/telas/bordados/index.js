@@ -4,12 +4,12 @@ import { StyleSheet, View} from 'react-native'
 import Topo from './componentes/topo';
 import Detalhes from './componentes/detalhes';
 
-export default function Bordados(){
+export default function Bordados({topo, detalhes}){
     return <>
-        <Topo />
+        <Topo {...topo}/>
     
         <View style={estilos.bord}>
-            <Detalhes />
+            <Detalhes {...detalhes}/>
         </View>
     </>
 }

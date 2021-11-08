@@ -3,12 +3,14 @@ import { Image, StyleSheet, Dimensions } from 'react-native';
 
 import Texto from '../../../componentes/texto';
 import tela0 from '../../../../assets/tela0.jpeg';
+
+
 const width = Dimensions.get('screen').width;
 
-export default function Topo (){
+export default function Topo ( {titulo}){
     return<>
         <Image source = {tela0} style={estilos.tela0}/>
-        <Texto style={estilos.titulo}>Águia Bordados</Texto>
+        <Texto style={estilos.titulo}>{ titulo }</Texto>
     </>
 }
 

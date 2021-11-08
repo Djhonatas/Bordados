@@ -2,17 +2,17 @@ import React from "react";
 import { View, Image, StyleSheet } from "react-native";
 
 import Texto from "../../../componentes/texto";
-import tela4 from '../../../../assets/tela4.jpeg';
 
-export default function detalhes(){
+
+export default function detalhes({nome, imagemCliente, nomeCliente, descricao, preco}){
     return <>
-        <Texto style ={estilos.nome}>Logo Aguia Bordados</Texto> 
+        <Texto style ={estilos.nome}>{nome}</Texto> 
         <View style ={estilos.cliente}>
-                <Image source={tela4} style={estilos.imagemCliente} />
-                <Texto style ={estilos.nomeCliente}>Cleiber Castro</Texto> 
+                <Image source={imagemCliente} style={estilos.imagemCliente} />
+                <Texto style ={estilos.nomeCliente}>{nomeCliente}</ Texto> 
         </View>
-        <Texto style ={estilos.descricao}> Bordado feito no ano de 2018 </ Texto> 
-        <Texto style = {estilos.preco}>R$ 40,00</Texto>
+        <Texto style ={estilos.descricao}> {descricao}</ Texto> 
+        <Texto style = {estilos.preco}>{preco}</Texto>
     </>
 }
 

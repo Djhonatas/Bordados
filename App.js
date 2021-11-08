@@ -7,6 +7,7 @@ import {
  } from '@expo-google-fonts/montserrat';
 
 import Bordados from './src/telas/bordados';
+import mock from './src/mocks/bordado';
 
 export default function App() {
   const [fonteCarregada] = useFonts({
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <SafeAreaView >
       <StatusBar />
-      <Bordados />
+      <Bordados {...mock} />
     </SafeAreaView>
   );
 }
