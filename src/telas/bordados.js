@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Image, Dimensions, Text, View} from 'react-native'
 
-import Texto from '../componentes/texto';
+import Texto from '../componentes/texto'
 
 import tela0 from '../../assets/tela0.jpeg';
 import tela4 from '../../assets/tela4.jpeg';
@@ -11,19 +11,15 @@ const width = Dimensions.get('screen').width
 export default function Bordados(){
     return <>
     <Image source = {tela0} style={estilos.tela0}/>
-    <Text style={estilos.titulo}>Águia Bordados</Text>
+    <Texto style={estilos.titulo}>Águia Bordados</Texto>
     
     <View style={estilos.bord}>
         <Text style ={estilos.nome}>Logo Aguia Bordados</Text> 
         <View style ={estilos.cliente}>
-        <Image source={tela4} style={estilos.imagemCliente} />
-        <Text style ={estilos.nomeCliente}>Cleiber Castro</Text> 
+            <Image source={tela4} style={estilos.imagemCliente} />
+            <Text style ={estilos.nomeCliente}>Cleiber Castro</Text> 
         </View>
-        <Text style ={estilos.descricao}>
-        A logo foi feita para 
-        a empresa Águia Bordados 
-        no ano de 2018
-        </Text> 
+        <Texto style ={estilos.descricao}> Bordado feito no ano de 2018 </ Texto> 
         <Text style = {estilos.preco}>R$ 40,00</Text>
     </View>
     </>
@@ -41,7 +37,7 @@ const estilos = StyleSheet.create({
         fontSize:           16,
         lineHeight:         26,
         fontWeight:         "bold",
-        padding:            16
+        padding:            16,
 
     },
     bord:{
