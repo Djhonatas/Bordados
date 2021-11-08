@@ -4,8 +4,7 @@ import {
   useFonts,
   Montserrat_400Regular, 
   Montserrat_700Bold,
-  Montserrat_400Regular_Italic } 
-  from '@expo-google-fonts/montserrat';
+ } from '@expo-google-fonts/montserrat';
 
 import Bordados from './src/telas/bordados';
 
