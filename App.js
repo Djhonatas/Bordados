@@ -1,10 +1,11 @@
 import React from 'react';
-import { StatusBar, SafeAreaView, View } from 'react-native';
+import { StatusBar, SafeAreaView, View, AppState } from 'react-native';
 import { 
   useFonts,
   Montserrat_400Regular, 
   Montserrat_700Bold,
  } from '@expo-google-fonts/montserrat';
+ import AppLoading from 'expo-app-loading';
 
 import Bordados from './src/telas/bordados';
 import mock from './src/mocks/bordado';
@@ -16,11 +17,11 @@ export default function App() {
   });
 
   if (!fonteCarregada) {
-   return <View />
+   return <AppLoading />
   }
 
   return (
-    <SafeAreaView >
+    <SafeAreaView style ={{flex: 1}} >
       <StatusBar />
       <Bordados {...mock} />
     </SafeAreaView>

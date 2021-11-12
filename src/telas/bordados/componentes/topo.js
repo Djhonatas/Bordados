@@ -18,15 +18,19 @@ const estilos = StyleSheet.create({
     tela0: {
         width:              "100%",
         height:             183 / 275 * width,
+        marginTop:          3,
+        
     },
     titulo: {
         width:              "100%",
         position:           "absolute",
-        color:              "white",
+        color:              "black",
         textAlign:          "center",
-        fontSize:           16,
+        fontSize:           30,
         lineHeight:         26,
         fontWeight:         "bold",
         padding:            16,
+        
+    }
 
-}})
+})
