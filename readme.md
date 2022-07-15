@@ -1,8 +1,8 @@
 # Github
 
-- Git init// não dá git init, animal!!
+- Git init// !!
 
-- Git add . // começa por essa porra.
+- Git add . //.
 
 
 - Git commit -m "modificação feita"
